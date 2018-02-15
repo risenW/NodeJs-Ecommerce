@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3">
+                <h1>Add a New Product</h1>
+                <form method="post" action="/upload" enctype="multipart/form-data">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="category_name">Product Title: </label>
+                                <input type="text" id="title" class="form-control" name="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="product_name">Product Description: </label>
+                                <input type="text" id="description" class="form-control" name="description">
+                            </div>
+                            <div class="form-group">
+                                <label for="product_price">Product Price: </label>
+                                <input type="text" id="price" class="form-control" name="price">
+                            </div>
+                            <div class="form-group">
+                                <label for="product_price">Upload Image: </label>
+                                <input type="file" id="product_image" class="form-control" name="product_image">
+                            </div>
+                            <button type="submit" class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
